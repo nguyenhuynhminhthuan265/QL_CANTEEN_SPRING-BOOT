@@ -1,4 +1,4 @@
-package com.myclass.entity;
+﻿package com.myclass.entity;
 
 import java.util.List;
 
@@ -14,7 +14,8 @@ import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.constraints.Length;
 
-@Entity(name = "users")
+@Entity
+@Table(name = "users")
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
