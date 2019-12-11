@@ -1,0 +1,11 @@
+package com.myclass.dto;
+
+import java.util.Date;
+
+public class StatisticDto {
+	
+	private int year;;
+	private S
+	private float totalPrice;
+
+}

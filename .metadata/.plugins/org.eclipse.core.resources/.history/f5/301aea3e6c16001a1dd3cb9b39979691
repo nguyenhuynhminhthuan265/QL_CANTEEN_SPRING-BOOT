@@ -1,0 +1,16 @@
+package com.myclass.ultil;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.core.context.SecurityContextHolder;
+
+import com.myclass.dto.CustomUserDetails;
+
+@Bean("mybean")
+public class urlUsernameUtil {
+	public String displayUsernameNavbar() {
+		CustomUserDetails employee = (CustomUserDetails) SecurityContextHolder.getContext().getAuthentication()
+				.getPrincipal();
+		//System.out.println("name log in: " + employee.getUsername());
+		return employee.getUsername();
+	}
+}

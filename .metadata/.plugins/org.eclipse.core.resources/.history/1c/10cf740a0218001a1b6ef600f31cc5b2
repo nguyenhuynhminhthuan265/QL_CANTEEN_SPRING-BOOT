@@ -1,0 +1,5 @@
+package com.myclass.security;
+
+public class CustomAuthenticationSuccessHandler {
+
+}

@@ -1,0 +1,26 @@
+package com.myclass;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.core.context.SecurityContextHolder;
+
+import com.myclass.dto.CustomUserDetails;
+
+@SpringBootApplication
+public class QuanLyCanteenApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(QuanLyCanteenApplication.class, args);
+	}
+	
+	
+	public String displayUsernameNavbar() {
+		CustomUserDetails employee = (CustomUserDetails) SecurityContextHolder.getContext().getAuthentication()
+				.getPrincipal();
+		//System.out.println("name log in: " + employee.getUsername());
+		return employee.getUsername();
+	}
+
+}

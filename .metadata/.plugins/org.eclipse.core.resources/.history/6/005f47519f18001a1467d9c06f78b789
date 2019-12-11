@@ -1,0 +1,17 @@
+package com.myclass.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.myclass.dto.StatisticDto;
+import com.myclass.entity.Bill;
+
+@Repository
+public interface BillRepository extends JpaRepository<Bill, Integer> {
+	
+	
+	List<StatisticDto> StatisticAllByYear();
+
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/default">
+<head>
+<meta charset="UTF-8">
+<title>Thống kê</title>
+
+</head>
+
+<body>
+<div layout:fragment="content">
+		<div class="row">
+			
+			<div class="col-sm-12">
+				<div class="card px-3">
+					
+					<div class="card-block table-border-style">
+						<div class="table-responsive">
+						
+						
+							<table class="table table-bordered" id="myTable">
+								<thead>
+									<tr>
+										<th>STT</th>
+										<th>Năm</th>
+										<th>Số hóa đơn</th>
+										<th>Doanh thu các năm</th>
+										
+										
+									</tr>
+								</thead>
+								<tbody>
+							
+								<!-- <tr th:each="item : ${bills}">
+										<td th:text="${ itemStat.index + 1 }"></td>
+										<td th:text="${ item.dateBill }"></td>
+										<td th:text="${ item.user.name }"></td>
+										<td th:text="${ item.price }"></td>
+										
+									</tr> -->
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>

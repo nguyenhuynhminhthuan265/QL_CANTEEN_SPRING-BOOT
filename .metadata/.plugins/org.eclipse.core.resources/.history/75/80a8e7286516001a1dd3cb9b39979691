@@ -1,0 +1,17 @@
+package com.myclass.dto;
+
+import java.util.Date;
+import java.util.List;
+
+import com.myclass.entity.DetailBill;
+import com.myclass.entity.Employee;
+import com.myclass.entity.Product;
+import com.myclass.entity.User;
+
+public class BillDto {
+	
+	private List<Product> products;
+	private List<User> users;
+
+
+}

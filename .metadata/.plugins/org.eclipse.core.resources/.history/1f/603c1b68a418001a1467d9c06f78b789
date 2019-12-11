@@ -1,0 +1,51 @@
+package com.myclass.dto;
+
+public class StatisticDto {
+	
+	private int year;
+	private int totalBill;
+	private float totalPrice;
+	
+	public StatisticDto() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public StatisticDto(int year, int totalBill, float totalPrice) {
+		super();
+		this.year = year;
+		this.totalBill = totalBill;
+		this.totalPrice = totalPrice;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	public int getTotalBill() {
+		return totalBill;
+	}
+
+	public void setTotalBill(int totalBill) {
+		this.totalBill = totalBill;
+	}
+
+	public float getTotalPrice() {
+		return totalPrice;
+	}
+
+	public void setTotalPrice(float totalPrice) {
+		this.totalPrice = totalPrice;
+	}
+
+	@Override
+	public String toString() {
+		return "StatisticDto [year=" + year + ", totalBill=" + totalBill + ", totalPrice=" + totalPrice + "]";
+	}
+	
+	
+
+}

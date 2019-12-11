@@ -1,0 +1,18 @@
+package com.myclass;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class QuanLyCanteenApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(QuanLyCanteenApplication.class, args);
+	}
+	
+	@Bean("myBean")
+	public String displayUsernameNavbar() {
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.myclass.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.myclass.repository.BillRepository;
+
+@Controller
+@RequestMapping("admin/statistic")
+public class StatisticController {
+	
+	@Autowired
+	private BillRepository billRepository;
+	
+	@GetMapping("")
+	public String index(Model model) {
+		
+		return "statistic/index";
+	}
+
+}
