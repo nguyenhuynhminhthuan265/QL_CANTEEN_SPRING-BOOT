@@ -51,7 +51,7 @@
 						<div class="dropdown-toggle" data-toggle="dropdown">
 							<img th:src="@{/assets/images/avatar-4.jpg}" class="img-radius" alt="User-Profile-Image"> 
 							
-							<span th:text="${USER_LOGIN}"></span> 
+							<span th:text="${session.USER_LOGIN}"></span> 
 							<!-- <span th:text="${#authentication.getPrincipal().getFullname()}"></span> -->
 							<i class="feather icon-chevron-down"></i>
 						</div>
@@ -63,7 +63,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="user-profile.htm"> 
+								<a href="#"> 
 									<i class="feather icon-user"></i> Profile
 								</a>
 							</li>
